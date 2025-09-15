@@ -9,8 +9,6 @@
 [![CI](https://github.com/USERNAME/nanovla/workflows/CI/badge.svg)](https://github.com/USERNAME/nanovla/actions)
 [![Documentation](https://img.shields.io/badge/docs-available-brightgreen)](./docs/)
 
-> **The "nanoGPT" of Vision-Language-Action models - Educational, accessible, and extensible**
-
 nanoVLA is a **research framework** and **educational platform** for Vision-Language-Action models. Transform any Vision-Language Model into a robot control system.
 
 ## What is nanoVLA?

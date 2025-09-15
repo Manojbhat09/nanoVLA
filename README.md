@@ -11,7 +11,7 @@
 
 > **The "nanoGPT" of Vision-Language-Action models - Educational, accessible, and extensible**
 
-nanoVLA is a **research framework** and **educational platform** for Vision-Language-Action models, inspired by the "nano" philosophy (nanoGPT, nanograd). Transform any Vision-Language Model into a robot control system.
+nanoVLA is a **research framework** and **educational platform** for Vision-Language-Action models. Transform any Vision-Language Model into a robot control system.
 
 ## What is nanoVLA?
 

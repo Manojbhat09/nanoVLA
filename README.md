@@ -270,10 +270,15 @@ results = trainer.train()
 - **[Comprehensive Testing Suite](test_from_vlm_minimal.py)** - Validation and testing frameworks
 - **[RL Training Integration](nanovla_rl_training.py)** - Reinforcement learning implementation examples
 
-### Research Resources
-- **[Empirical Testing Results](TESTING_RESULTS.md)** - Validation results and performance analysis
-- **[Research Opportunities](INNOVATION_ROADMAP.md)** - Open problems and future directions
-- **[Comparative Analysis](WHAT_MAKES_NANOVLA_DIFFERENT.md)** - Detailed comparison with existing approaches
+## **What Makes nanoVLA Actually Different**
+
+### **Key Differentiators (Real):**
+1. **VLM-Agnostic**: Use ANY VLM as backbone (vs. fixed architectures)
+2. **Educational Scale**: ~1000 lines vs. 15,000+ lines in production VLAs
+3. **Modular Design**: Mix-and-match components vs. monolithic designs
+4. **Transfer Learning**: Automatic strategy selection vs. one-size-fits-all
+5. **RL Integration**: Built-in RL training vs. no standardized RL
+6. **Accessibility**: Single GPU vs. multi-GPU requirements
 
 ## Development and Contributing
 
@@ -316,18 +321,11 @@ model = nanoVLA.from_vlm("my_vlm", action_dim=7)
 ### **Development Setup**
 ```bash
 # Clone and setup
-git clone <repository-url>
+git clone https://github.com/Manojbhat09/nanoVLA
 cd nanoVLA
 
 # Install development dependencies  
-pip install -e ".[dev]"
-
-# Run tests
-python test_installation.py
-make test  # If using development setup
-
-# Code quality
-make lint
+pip install -e .
 ```
 
 ## Status and Roadmap
@@ -341,13 +339,9 @@ make lint
 - **Comprehensive testing** - All core functionality validated with 4/4 tests passing
 
 ### What Needs Real Models
-- **Actual model loading** - Requires access to real VLM checkpoints for validation
 - **Training validation** - Needs comprehensive robot datasets for empirical training validation
 - **Performance benchmarks** - Real robot task evaluation requires extensive empirical validation
 - **Memory optimization** - Large model deployment needs systematic optimization testing
-
-### Current Status: Framework + Prototypes
-The implementation provides a **solid engineering foundation** that's ready for real VLM integration and robot training. All core systems work - now it needs real models and data to validate performance.
 
 ## Contributing
 
@@ -371,32 +365,13 @@ This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENS
 - **SimpleVLA-RL Integration** - Reinforcement learning capabilities based on proven methodologies  
 - **Open Robotics Community** - Collaborative development of datasets, benchmarks, and evaluation protocols
 
-## Contact and Community
-
-- **Issues and Bug Reports**: [GitHub Issues](https://github.com/your-org/nanovla/issues)
-- **Community Discussions**: [GitHub Discussions](https://github.com/your-org/nanovla/discussions)
-- **Documentation**: [Complete documentation](./docs/)
-- **Research Updates**: Follow the repository for latest developments and research contributions
 
 ---
 
 
-## Project Statistics
-
-[![GitHub stars](https://img.shields.io/github/stars/USERNAME/nanovla.svg?style=social&label=Star)](https://github.com/USERNAME/nanovla)
-[![GitHub forks](https://img.shields.io/github/forks/USERNAME/nanovla.svg?style=social&label=Fork)](https://github.com/USERNAME/nanovla/fork)
-[![GitHub watchers](https://img.shields.io/github/watchers/USERNAME/nanovla.svg?style=social&label=Watch)](https://github.com/USERNAME/nanovla)
-[![GitHub contributors](https://img.shields.io/github/contributors/USERNAME/nanovla.svg)](https://github.com/USERNAME/nanovla/graphs/contributors)
-
-[![GitHub issues](https://img.shields.io/github/issues/USERNAME/nanovla.svg)](https://github.com/USERNAME/nanovla/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/USERNAME/nanovla.svg)](https://github.com/USERNAME/nanovla/pulls)
-[![GitHub last commit](https://img.shields.io/github/last-commit/USERNAME/nanovla.svg)](https://github.com/USERNAME/nanovla/commits/main)
-[![GitHub repo size](https://img.shields.io/github/repo-size/USERNAME/nanovla.svg)](https://github.com/USERNAME/nanovla)
+[![GitHub stars](https://img.shields.io/github/stars/manojbhat09/nanovla.svg?style=social&label=Star)](https://github.com/manojbhat09/nanovla)
+[![GitHub forks](https://img.shields.io/github/forks/USERNAME/manojbhat09.svg?style=social&label=Fork)](https://github.com/manojbhat09/nanovla/fork)
 
 [![Downloads](https://img.shields.io/pypi/dm/nanovla.svg)](https://pypi.org/project/nanovla/)
 [![PyPI version](https://img.shields.io/pypi/v/nanovla.svg)](https://pypi.org/project/nanovla/)
-[![Conda version](https://img.shields.io/conda/v/conda-forge/nanovla.svg)](https://anaconda.org/conda-forge/nanovla)
 
-**Ready to democratize Vision-Language-Action model development**
-
-*"Our goal is to make VLA development as accessible as `model = nanoVLA.from_vlm("llava")` while providing the sophisticated extensibility that advanced researchers and practitioners require."*

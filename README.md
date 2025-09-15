@@ -343,7 +343,6 @@ This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENS
 
 ## Acknowledgments
 
-- **Inspired by nanoGPT** - Andrej Karpathy's educational approach to making complex AI systems accessible
 - **Built on HuggingFace Ecosystem** - Professional AI development frameworks and community standards
 - **SimpleVLA-RL Integration** - Reinforcement learning capabilities based on proven methodologies  
 - **Open Robotics Community** - Collaborative development of datasets, benchmarks, and evaluation protocols

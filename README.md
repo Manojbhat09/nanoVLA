@@ -45,43 +45,10 @@ Output: [0.1, -0.2, 0.05, 0, 0, 0, 1]  # 7-DOF robot action vector
 
 ## Why nanoVLA?
 
-### Educational Philosophy and Accessibility
+### Accessibility
 
 nanoVLA addresses a critical gap in robotics research by providing an educational framework that makes Vision-Language-Action models accessible to a broader audience. Unlike production systems that prioritize performance over comprehensibility, nanoVLA emphasizes transparency and educational value.
 
-**Design Principles:**
-- **Minimal complexity**: The entire framework spans approximately 1000 lines of well-documented code
-- **Architectural transparency**: Every component is designed to be easily understood and modified
-- **Comprehensive documentation**: Extensive guides covering both theoretical concepts and practical implementation
-- **Progressive complexity**: Examples range from basic demonstrations to advanced research applications
-
-### Universal VLM Compatibility Architecture
-| VLM Family | Compatibility Level | Required Training Time | Primary Use Case |
-|------------|-------------------|---------------------|------------------|
-| **OpenVLA** | Native (95-100%) | 1-5 hours | Production deployment |
-| **LLaVA** | High (80-95%) | 5-20 hours | Research and development |
-| **InstructBLIP** | High (80-95%) | 10-30 hours | High-performance applications |
-| **BLIP-2** | Moderate (60-80%) | 20-50 hours | Custom experimental setups |
-| **CLIP+GPT** | Limited (40-60%) | 50-100 hours | Novel architecture research |
-
-The framework implements sophisticated adapter patterns that automatically determine the optimal integration strategy based on the target VLM's architecture, training data, and capability profile.
-
-### Advanced Framework Features
-
-**Universal VLM Integration System:**
-The framework provides a sophisticated factory pattern that enables seamless integration of diverse Vision-Language Models. Each VLM is wrapped with a standardized adapter that exposes consistent interfaces while preserving model-specific optimizations.
-
-**Intelligent Transfer Learning Engine:**
-Based on extensive empirical analysis, the framework automatically selects optimal transfer learning strategies for each VLM type. This includes decisions about layer freezing, learning rate scheduling, and gradient accumulation patterns.
-
-**Reinforcement Learning Integration:**
-Built-in support for outcome-based reinforcement learning through integration with SimpleVLA-RL framework. This enables models to improve through environmental interaction beyond supervised fine-tuning.
-
-**Production-Ready Architecture:**
-The framework follows enterprise software engineering practices including comprehensive type annotations, protocol-based interfaces, and extensive testing coverage to ensure reliability in research and production environments.
-
-**Extensible Component System:**
-Modular architecture enables researchers to experiment with novel fusion strategies, action representations, and training methodologies while maintaining compatibility with the broader framework.
 
 ## Quick Start Guide
 
@@ -255,6 +222,24 @@ results = trainer.train()
 - **Multiple datasets**: LIBERO-Long, LIBERO-90, spatial/object tasks  
 - **Proven approach**: Based on SimpleVLA-RL (97.6 points on LIBERO-Long)
 - **Scalable**: Single-node or multi-node GPU support
+
+### Framework Features
+
+**Universal VLM Integration System:**
+The framework provides a sophisticated factory pattern that enables seamless integration of diverse Vision-Language Models. Each VLM is wrapped with a standardized adapter that exposes consistent interfaces while preserving model-specific optimizations.
+
+**Intelligent Transfer Learning Engine:**
+Based on extensive empirical analysis, the framework can automatically selects optimal transfer learning strategies for each VLM type. This includes decisions about layer freezing, learning rate scheduling, and gradient accumulation patterns.
+
+**Reinforcement Learning Integration:**
+Built-in support for outcome-based reinforcement learning through integration with SimpleVLA-RL framework. This enables models to improve through environmental interaction beyond supervised fine-tuning.
+
+**Production-Ready Architecture:**
+The framework follows enterprise software engineering practices including comprehensive type annotations, protocol-based interfaces, and extensive testing coverage to ensure reliability in research and production environments.
+
+**Extensible Component System:**
+Modular architecture enables researchers to experiment with novel fusion strategies, action representations, and training methodologies while maintaining compatibility with the broader framework.
+
 
 ## Documentation and Examples
 
